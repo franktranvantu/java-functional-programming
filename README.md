@@ -1,9 +1,1 @@
-# About this Course
-Functional Programming is an old paradigm, but one that is relatively new to Java world. In this course we will explore how to take advantage of the power that comes with thinking declaratively.
-
-## What you'll learn
-- Imperative vs. Declarative Syntax
-- Lambdas & Method References
-- Streams
-- Functional Programming concepts
-- Higher Order Functions and Closures
+We Java developers have been focussing heavily on imperative style, but declarative functions are available. Let's get used to the difference.
