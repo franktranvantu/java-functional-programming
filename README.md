@@ -1,2 +1,2 @@
-# Method References
-Methods can be referred to using the `::` syntax.
+# Function Shapes
+Let's explore the built in Function Shapes
