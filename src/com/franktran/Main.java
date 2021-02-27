@@ -16,11 +16,9 @@ public class Main {
           "milk"
       );
 
-      ingredients.forEach(new Consumer<String>() {
-        @Override
-        public void accept(String s) {
-          System.out.println(s);
-        }
-      });
+//      ingredients.forEach(ingredient -> System.out.println(ingredient));
+
+      Consumer<String> printInConsole = ingredient -> System.out.println(ingredient);
+      ingredients.forEach(printInConsole);
     }
 }

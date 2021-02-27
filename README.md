@@ -1,2 +1,2 @@
-# A More Functional Loop
-Let's explore the new `forEach` method that expects a `Consumer`.
+# Lambdas
+Lambdas are syntactical sugar for Single Abstract Methods.
