@@ -1,2 +1,2 @@
-# Lambdas
-Lambdas are syntactical sugar for Single Abstract Methods.
+# Method References
+Methods can be referred to using the `::` syntax.

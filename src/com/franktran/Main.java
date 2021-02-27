@@ -6,6 +6,10 @@ import java.util.function.Consumer;
 
 public class Main {
 
+  public static void yell(String words) {
+    System.out.printf("%s!!!%n", words);
+  }
+
     public static void main(String[] args) {
       List<String> ingredients = Arrays.asList(
           "flour",
@@ -16,9 +20,11 @@ public class Main {
           "milk"
       );
 
-//      ingredients.forEach(ingredient -> System.out.println(ingredient));
+//      Consumer<String> printInConsole = System.out::println;
 
-      Consumer<String> printInConsole = ingredient -> System.out.println(ingredient);
-      ingredients.forEach(printInConsole);
+//      ingredients.forEach(System.out::println);
+
+      Main.yell("But I want that cupcake");
+      ingredients.forEach(Main::yell);
     }
 }
