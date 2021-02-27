@@ -2,6 +2,7 @@ package com.franktran;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Main {
 
@@ -15,30 +16,11 @@ public class Main {
           "milk"
       );
 
-      boolean hasEggs = false;
-//      for (int i = 0; i < ingredients.size(); i++) {
-//        String ingredient = ingredients.get(i);
-//        if (ingredient.equals("eggs")) {
-//          hasEggs = true;
-//          break;
-//        }
-//      }
-//      if (hasEggs) {
-//        System.out.println("Sorry sweetheart! It has eggs :(");
-//      }
-
-//      for (String ingredient : ingredients) {
-//        if (ingredient.equals("eggs")) {
-//          hasEggs = true;
-//          break;
-//        }
-//      }
-//      if (hasEggs) {
-//        System.out.println("Sorry sweetheart! It has eggs :(");
-//      }
-
-      if (ingredients.contains("eggs")) {
-        System.out.println("sorry sweetheart! It has eggs :(");
-      }
+      ingredients.forEach(new Consumer<String>() {
+        @Override
+        public void accept(String s) {
+          System.out.println(s);
+        }
+      });
     }
 }

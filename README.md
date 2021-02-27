@@ -1,1 +1,2 @@
-We Java developers have been focussing heavily on imperative style, but declarative functions are available. Let's get used to the difference.
+# A More Functional Loop
+Let's explore the new `forEach` method that expects a `Consumer`.
